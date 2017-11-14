@@ -6,7 +6,7 @@
   </head>
   <body>
       <header>
-          <h1 class="visually-hidden">nёrd's</h1>
+          <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
           <nav class="main-navigator">
               <a href="index.html">  
                   <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
@@ -24,106 +24,120 @@
           </div>
       </header>
       <main>
-          <form action="https://echo.htmlacademy.ru" method="get"> <!-- адрес сервера -->
-              <div class="filters">
-              
-                  <fieldset class="filter-1">
+          <form action="https://echo.htmlacademy.ru" method="get">
+                  <fieldset class="filter-price">
                   <legend>стоимость:</legend>
                   <label>
-                          <input class="visually-hidden" type="range" min="0" max="15000">
+                          <input type="range" min="0" max="15000">
                           от 0 до 15000
                   </label>
                   </fieldset>
-                  <fieldset class="filter-2">    
+                  <fieldset class="filter-view">    
                   <legend>сетка:</legend>
                   <label>
-                          <input class="visually-hidden" type="radio" name="rad" value="Адаптивная" checked>Адаптированная
+                          <input type="radio" name="rad" value="Адаптивная" checked>Адаптированная
                   </label>
                   <label>
-                          <input class="visually-hidden" type="radio" name="rad" value="Фиксированная">Фиксированная
+                          <input type="radio" name="rad" value="Фиксированная">Фиксированная
                   </label>
                   <label>
-                          <input class="visually-hidden" type="radio" name="rad" value="Резиновая">Резиновая
+                          <input type="radio" name="rad" value="Резиновая">Резиновая
                   </label>
                   </fieldset>
-                  <fieldset class="filter-3">    
+                  <fieldset class="filter-feature">    
                   <legend>особенности:</legend>
                   <label>
-                          <input class="visually-hidden" type="checkbox" checked value="Слайдер">Слайдер
+                          <input type="checkbox" checked value="Слайдер">Слайдер
                   </label>
                   <label>
-                          <input class="visually-hidden" type="checkbox" value="Блок преимуществ">Блок преимуществ
+                          <input type="checkbox" value="Блок преимуществ">Блок преимуществ
                   </label>
                   <label>   
-                          <input class="visually-hidden" type="checkbox" checked value="Новости">Новости
+                          <input type="checkbox" checked value="Новости">Новости
                   </label>
                   <label>    
-                          <input class="visually-hidden" type="checkbox" value="Галерея">Галерея
+                          <input type="checkbox" value="Галерея">Галерея
                   </label>
                   <label>    
-                          <input class="visually-hidden" type="checkbox" value="Корзина">Корзина
+                          <input type="checkbox" value="Корзина">Корзина
                   </label>
                   </fieldset>    
                   <button type="submit">показать</button>    
-              </div>
           </form>
-          
               <div class="tuning">
                   
                       <span>сортировать:</span>
                       <ul>
-                          <li><input type="button" value="по цене" name="v"></li>
-                          <li><input type="button" value="по типу" name="v"></li>
-                          <li><input type="button" value="по названию" name="v"></li>
+                          <li><button type="button" value="по цене"></li>
+                          <li><button type="button" value="по типу"></li>
+                          <li><button type="button" value="по названию"></li>
                           <!-- теугольнички декоративный элемент, индикатор --> 
                       </ul>
-                   
-              </div>
-                 
+              </div>    
           <div class="list">
               <ul class="a-img">
-                  <li><a href="sedona.html"><img src="img/img-sedona.jpg" width="360" height="576" alt="седона"></a></li>
-                  <li><a href="pink.html"><img src="img/img-pink.jpg" width="360" height="576" alt="пинк"></a></li>
-                  <li><a href="barbershop.html"><img src="img/img-barbershop.jpg" width="360" height="576" alt="бородинский"></a></li>
-                  <li><a href="mishka.html"><img src="img/img-mishka.jpg" width="360" height="576" alt="ручная работа"></a></li>
-                  <li><a href="aplus.html"><img src="img/img-aplus.jpg" width="360" height="576" alt="учеба"></a></li>
-                  <li><a href="kvast.html"><img src="img/img-kvast.jpg" width="360" height="576" alt="крафтовый квас"></a></li>
+                  <li>
+                      <a href="sedona.html"><img src="img/img-sedona.jpg" width="360" height="576" alt="готовый шаблон сайта "седона"></a>
+                  </li>
+                  <li>
+                      <a href="pink.html"><img src="img/img-pink.jpg" width="360" height="576" alt="готовый шаблон сайта "пинк"></a>
+                  </li>
+                  <li>
+                      <a href="barbershop.html"><img src="img/img-barbershop.jpg" width="360" height="576" alt="готовый шаблон сайта "бородинский"></a>
+                  </li>
+                  <li>
+                      <a href="mishka.html"><img src="img/img-mishka.jpg" width="360" height="576" alt="готовый шаблон сайта "ручная работа"></a>
+                  </li>
+                  <li>
+                      <a href="aplus.html"><img src="img/img-aplus.jpg" width="360" height="576" alt="готовый шаблон сайта "учеба"></a>
+                  </li>
+                  <li>
+                      <a href="kvast.html"><img src="img/img-kvast.jpg" width="360" height="576" alt="готовый шаблон сайта "крафтовый квас"></a>
+                  </li>
               </ul>
           </div>
           <div class="pagination-list">
               <ul>
-                  <li><a class="pagination-item" href="1.html">1</a></li>
-                  <li><a class="pagination-item" href="2.html">2</a></li>
-                  <li><a class="pagination-item" href="3.html">3</a></li>
-                  <li><a class="pagination-item" href="4.html">следующая</a></li>
+                  <li>
+                      <a class="pagination-item" href="1.html"><span class="visually-hidden">Страница с товарами №1</span>1</a>
+                  </li>
+                  <li>
+                      <a class="pagination-item" href="2.html"><span class="visually-hidden">Страница с товарами №2</span>2</a>
+                  </li>
+                  <li>
+                      <a class="pagination-item" href="3.html"><span class="visually-hidden">Страница с товарами №3</span>3</a>
+                  </li>
+                  <li>
+                      <a class="pagination-item" href="4.html"><span class="visually-hidden">Следующая страница с товарами</span>Следующая</a>
+                  </li>
               </ul>    
           </div>
       </main>
       <footer>
          <div class="adress">
-             <a href="map.svg">
              <img src="img/map.jpg" width="1440" height="416" alt="карта">
-             </a> <!-- карта -->
-             <b>nёrd's design studio</b>
-             <span>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-             <a href="tel:+7(812)275-75-75">тел.+7(812)275-75-75</a>
-             <a href="#" class="adress">напишите нам</a>
+             <address>
+                 <b>nёrd's design studio</b>
+                 <span>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                 <a href="tel:+7(812)275-75-75">тел.+7(812)275-75-75</a>
+                 <a href="#" class="adress">напишите нам</a>
+             </address>
          </div>
          <div class="link"> 
              <ul>
                  <li>
                      <a href="vk.html">
-                         <img src="img/vk-icon.svg" alt="vk">
+                         <img src="img/vk-icon.svg" alt="vkontakte.ru">vkontakte.ru
                      </a>
                  </li>
                  <li>
                      <a href="facebook.html">
-                     <img src="img/fb-icon.svg" alt="fb">
+                     <img src="img/fb-icon.svg" alt="facebook.com">facebook.com
                      </a>
                  </li>
                  <li>
                      <a href="instagram.html">
-                         <img src="img/insta-icon.svg" alt="insta">
+                         <img src="img/insta-icon.svg" alt="instagram.com">instagram.com
                      </a>
                  </li>
              </ul>
