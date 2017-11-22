@@ -9,6 +9,7 @@
   </head>
   <body>
      <header>
+        
          <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
          <nav class="main-navigator">
              <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
@@ -40,28 +41,29 @@
              </div>
              <div class="wrapper" >
                  
-                     <button type="button">переключение картинок со слоганами</button>
-                     <button type="button">переключение картинок со слоганами</button>
-                     <button type="button">переключение картинок со слоганами</button>
+                     <button type="button">страница слайдера 1</button>
+                     <button type="button">страница слайдера 2</button>
+                     <button type="button">страница слайдера 3</button>
                  
              </div>
-         </div>   
+         </div>
+        
          <section class="offers">
-             <h2>Услуги</h2>
+             <h2 class="visually-hidden">Услуги</h2>
                   <ul class="offers">
-                     <li>
+                     <li class="web-sites">
                              <img src="img/illustration-1.jpg" width="300" height="146" alt="веб-сайты">
                              <h3>веб-сайты</h3>
                              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                              <a href="#">заказать</a>
                      </li>
-                     <li>
+                     <li class="applications">
                              <img src="img/illustration-2.jpg" width="300" height="146" alt="приложения">
                              <h3>приложения</h3>
                              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                              <a href="#">заказать</a>  
                      </li>
-                     <li>
+                     <li class="presentations">
                              <img src="img/illustration-3.jpg" width="300" height="146" alt="презентации">
                              <h3>презентации</h3>
                              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -70,12 +72,12 @@
                  </ul>
          </section>
          <section class="about us">
-             <h2>О нас</h2>
+             <h2 class="visually-hidden">О нас</h2>
                  <div class="amenities">
                      <ul class="amenities">
-                         <li><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></li>
-                         <li><p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p></li>
-                         <li><b>Выполняем заказы на разработку:</b></li>
+                         <li class="we-studio"><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></li>
+                         <li class="principle"><p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p></li>
+                         <li class="order"><b>Выполняем заказы на разработку:</b></li>
                          <li><p>Веб-сайтов любой сложности</p></li>
                          <li><p>Мобильных приложений для iOS и Android</p></li>
                          <li><p>Слайдшоу и видео для корпоративных презентаций</p></li>
@@ -85,7 +87,7 @@
                     <div class="sign">
                         <div class="picture">
                              <span class="visually-hidden">nёrd's</span>
-                             <img src="img/nerds-logo.svg" alt="логотип">
+                             <img src="img/nerds-logo.svg" alt="логотип" class="visually-hidden">
                         </div>
                         <div class="formula">
                              <b>С 2004 года любим точность во всем:</b>
@@ -93,22 +95,22 @@
                     </div>   
                     <div class="numbers">
                         <div class="1">
-                            <p>146%</p>
+                            <span>146%</span>
                             <p>Уровень самоотдачи</p>
                         </div>
                         <div class="2">
-                            <p>100%</p>
+                            <span>100%</span>
                             <p>Соблюдение сроков</p>
                         </div>
                         <div class="3">
-                            <p>50%</p>
+                            <span>50%</span>
                             <p>Минимальная предоплата</p>
                         </div>
                     </div>   
                 </div>
          </section>    
          <section class="partners">
-             <h2>Партнеры</h2>
+             <h2 class="visually-hidden">Партнеры</h2>
              <ul class="partners">
                 <li>
                     <a href="http://keksby.ru"> 
@@ -138,10 +140,12 @@
              <img src="img/map.jpg" width="1440" height="416" alt="карта">
              <address class="address">
                  <b>nёrd's design studio</b>
-                 <span>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                 <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
                  <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
-                 <a href="#" class="adress">напишите нам</a>
-                 <div class="modal visually-hidden">
+                 <div class="location">
+                     <a href="#" class="adress">напишите нам</a>
+                 </div>
+                 <div class="modal visually-hidden"> <--  class=""  -->
                      <form action="https://echo.htmlacademy.ru" method="post">
                          <fieldset class="modal-letter">
                              <h2>Напишите нам</h2>
@@ -154,7 +158,7 @@
                              <label>
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
-                             <button type="button">отправить</button>
+                             <button class="letter" type="button">отправить</button>
                          </fieldset>
                      </form>
                  </div>

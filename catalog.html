@@ -9,11 +9,9 @@
   </head>
   <body>
       <header>
-          <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
-          <nav class="main-navigator">
-              <a href="index.html">  
-                  <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
-              </a> 
+           <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
+         <nav class="main-navigator">
+             <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
              <ul class="site-navigation">
                  <li><a href="studio.html">студия</a></li>
                  <li><a href="clients.html">клиенты</a></li>
@@ -21,9 +19,9 @@
                  <li><a href="contacts.html">контакты</a></li>
                  <li><a href="basket.html">корзина</a></li>
              </ul> 
-          </nav>
+         </nav>
           <div class="header">
-             <span>Магазин готовых шаблонов</span>
+             <span class="under">Магазин готовых шаблонов</span>
           </div>
       </header>
       <main>
@@ -152,14 +150,17 @@
       <footer>
          <div class="adress">
              <img src="img/map.jpg" width="1440" height="416" alt="карта">
-             <address>
+             <address class="address">
                  <b>nёrd's design studio</b>
-                 <span>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-                 <a href="tel:+7(812)275-75-75">тел.+7(812)275-75-75</a>
-                 <a href="#" class="adress">напишите нам</a>
-                 <div class="modal">
-                     <form action="https://echo.htmlacademy.ru" method="get">
+                 <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                 <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
+                 <div class="location">
+                     <a href="#" class="adress">напишите нам</a>
+                 </div>
+                 <div class="modal visually-hidden"> <--  class=""  -->
+                     <form action="https://echo.htmlacademy.ru" method="post">
                          <fieldset class="modal-letter">
+                             <h2>Напишите нам</h2>
                              <label>
                                  Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста">
                              </label>
@@ -169,7 +170,7 @@
                              <label>
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
-                             <button type="button">отправить</button>
+                             <button class="letter" type="button">отправить</button>
                          </fieldset>
                      </form>
                  </div>
@@ -195,7 +196,7 @@
              </ul>
              <b>Давайте дружить, это выгодно!</b>
              <p>Скидка 10% для друзей из социальных сетей</p>
-         </div>    
+         </div>
      </footer>
   </body>
 </html>
