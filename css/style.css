@@ -2,13 +2,11 @@
 body {
     margin: 0;
     padding: 0; 
-    
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-
     background-color: white;}
 
 img { max-width: 100%;}
@@ -35,6 +33,13 @@ html {box-sizing: border-box;}
     font-weight: 500;
     color: black;}
 
+/*кнопки-ссылки с белым текстом*/
+.texts {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color:white;}
+
 /*удаление маркеров и внешних отступов у списков*/
 .site-navigation {
     list-style: none;}
@@ -42,48 +47,37 @@ html {box-sizing: border-box;}
     margin: 0;}
 
 /* SLIDER*/
-.main-navigator,
 .advertising-poster {
     background-color: rgb(238,238,238);
     background-image: url("../img/slider1.png");
     background-repeat: no-repeat;}
 
 /*MAIN*/
+/*серый фон*/
+.main-navigator {
+    background: rgb(238,238,238);
+}
 /*текст*/
 .advertising-poster b {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    color:black;
-    background-color: rgb(238,238,238);}
+    color:black;}
 
 .advertising-poster p {
-    color: rgb(40,49,54);
-    background-color: rgb(238,238,238);}
+    color: rgb(40,49,54);}
 
-/*кнопки-ссылки "узнать больше" и "заказать" белый текст, красный фон*/
+/*кнопки-ссылки "узнать больше" и "заказать", красный фон*/
 .advertising-poster a,
 .web-sites a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
     background-color: rgb(251,86,90);}
 
-/*кнопка-ссылка "заказать" белый текст, зеленый фон*/
+/*кнопка-ссылка "заказать", зеленый фон*/
 .applications a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
     background-color: rgb(0,202,116);}
 
 /*кнопка-ссылка "заказать" белый текст, желтый фон*/
 .presentations a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
     background-color: rgb(239,200,74);}
 
  /*заголовки*/   
@@ -91,13 +85,11 @@ html {box-sizing: border-box;}
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
-    color: black;
-    background-color: white;}
+    color: black;}
 
 /*текст*/
 .offers p {
-    color: rgb(40,49,54);
-    background-color: white;}
+    color: rgb(40,49,54);}
 
 /*удаление маркеров и внешних отступов у списков*/
 .offers {
@@ -117,22 +109,14 @@ html {box-sizing: border-box;}
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: black;
-    background-color: white;}
+    color: black;}
     
 .principle p {
-    color: rgb(40,49,54);
-    background-color: white;}
+    color: rgb(40,49,54);}
 
-.order b {
+.order {
     font-weight: 700;
-    color: black;
-    background-color: white;}
-
-.order p {
-    font-weight: 700;
-    color: black;
-    background-color: white;}
+    color: black;}
 
 /*фон nёrd's*/
 .picture {
@@ -157,8 +141,7 @@ html {box-sizing: border-box;}
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: rgb(40,49,54);
-    background-color: white;}
+    color: rgb(40,49,54);}
 
 /*секция Партнеры*/
 /*удаление маркеров и внешних отступов у списков*/
@@ -176,26 +159,21 @@ html {box-sizing: border-box;}
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    color: black;
-    background-color: white;}
+    color: black;}
 
-.address .position,
-.address .tel {
+.position,
+.tel {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: rgb(102,102,102);
-    background-color: white;}
+    color: rgb(102,102,102);}
 
-/*кнопка-ссылка "напишите нам" белый текст, красный фон*/
+/*кнопка-ссылка "напишите нам", красный фон*/
 .location a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
     background-color: rgb(251,86,90);}
 
 /*Модальное окно форма*/
+.modal {display: none;}
 .modal-letter h2 {
     font-size: 45px;
     line-height: 45px;
@@ -210,12 +188,8 @@ html {box-sizing: border-box;}
     color: black;
     background-color: white;}
 
-/*кнопка-ссылка "отправить" белый текст, красный фон*/
+/*кнопка-ссылка "отправить", красный фон*/
 .letter {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
     background-color: rgb(251,86,90);}
 
 /*Див link (мы в сетях)*/
@@ -229,15 +203,13 @@ html {box-sizing: border-box;}
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
-    color: black;
-    background-color: white;}
+    color: black;}
 
 .link p {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    color: rgb(68,68,68);
-    background-color: white;}
+    color: rgb(68,68,68);}
 
 
 
@@ -255,7 +227,7 @@ fieldset {
 
  /*MAIN*/
 /*текст бегунка*/
-.filter-price legend {
+.title {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -266,38 +238,19 @@ fieldset {
     line-height: 18px;
     font-weight: 400;
     color: black;}
-
-/*типы сеток*/
-.filter-view legend {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    color: black;}
-
-.filter-view label {
+ 
+.list {
     font-size: 10px;
     line-height: 16px;
     font-weight: 400;
     color: black;}
 
-/*особенности:*/
-.filter-feature legend {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    color: black;}
-
-.filter-feature label {
-    font-size: 10px;
-    line-height: 16px;
-    font-weight: 400;
-    color: black;}
 
 /*кнопка-ссылка "показать" черный текст, серый фон*/
-.filter-view​ button {
+.filter-view button {
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color:white;
     background-color: rgb(102,102,102);}
 
@@ -307,12 +260,6 @@ fieldset {
     list-style: none;}
 .tuning ul {
     margin: 0;}
-
-.tuning span {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    color: black;}
 
 .tuning ul {
     font-size: 12px;
@@ -339,10 +286,6 @@ fieldset {
 
 /*кнопка-ссылка "9900 руб" белый текст, красный фон*/
 .a-img button {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: white;
     background-color: rgb(251,86,90);}
 
 /*Пагинатор*/

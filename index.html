@@ -12,7 +12,9 @@
         
          <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
          <nav class="main-navigator">
-             <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
+             <a>
+                 <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
+             </a>
              <ul class="site-navigation">
                  <li><a href="studio.html">студия</a></li>
                  <li><a href="clients.html">клиенты</a></li>
@@ -27,23 +29,23 @@
              <div class="advertising-poster-1">   <!-- Первый слайдер -->
                  <b>Долго, дорого, скрупулезно.</b>
                  <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                 <a href="information.html">узнать больше</a>
+                 <a class="texts" href="information.html">узнать больше</a>
              </div>
              <div class="advertising-poster-2 visually-hidden"> <!-- Второй слайдер -->
                  <b>Любим математику как никто другой.</b>   
                  <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                 <a href="information.html">узнать больше</a>
+                 <a  class="texts" href="information.html">узнать больше</a>
              </div>
              <div class="advertising-poster-3 visually-hidden"> <!-- Третий слайдер -->
                  <b>Только ночь, только хардкор.</b>   
                  <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-                 <a href="information.html">узнать больше</a>
+                 <a  class="texts" href="information.html">узнать больше</a>
              </div>
              <div class="wrapper" >
                  
-                     <button type="button">страница слайдера 1</button>
-                     <button type="button">страница слайдера 2</button>
-                     <button type="button">страница слайдера 3</button>
+                     <button type="button"><p class="visually-hidden">страница слайдера 1</p></button>
+                 <button type="button"><p class="visually-hidden">страница слайдера 2</p></button>
+                 <button type="button"><p class="visually-hidden">страница слайдера 3</p></button>
                  
              </div>
          </div>
@@ -55,19 +57,19 @@
                              <img src="img/illustration-1.jpg" width="300" height="146" alt="веб-сайты">
                              <h3>веб-сайты</h3>
                              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                             <a href="#">заказать</a>
+                             <a  class="texts" href="#">заказать</a>
                      </li>
                      <li class="applications">
                              <img src="img/illustration-2.jpg" width="300" height="146" alt="приложения">
                              <h3>приложения</h3>
                              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                             <a href="#">заказать</a>  
+                             <a  class="texts" href="#">заказать</a>  
                      </li>
                      <li class="presentations">
                              <img src="img/illustration-3.jpg" width="300" height="146" alt="презентации">
                              <h3>презентации</h3>
                              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                             <a href="#">заказать</a>
+                             <a class="texts" href="#">заказать</a>
                      </li>
                  </ul>
          </section>
@@ -145,9 +147,9 @@
                  <div class="location">
                      <a href="#" class="adress">напишите нам</a>
                  </div>
-                 <div class="modal visually-hidden"> <--  class=""  -->
+                 <div class="modal">
                      <form action="https://echo.htmlacademy.ru" method="post">
-                         <fieldset class="modal-letter">
+                         <div class="modal-letter">
                              <h2>Напишите нам</h2>
                              <label>
                                  Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста">
@@ -159,7 +161,7 @@
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
                              <button class="letter" type="button">отправить</button>
-                         </fieldset>
+                         </div>
                      </form>
                  </div>
              </address>

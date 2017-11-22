@@ -11,7 +11,9 @@
       <header>
            <h1 class="visually-hidden">nёrd's - студия дизайна и верстки сайтов</h1>
          <nav class="main-navigator">
-             <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
+             <a href="index.html">
+                 <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">  <!-- nёrd's -->
+             </a>    
              <ul class="site-navigation">
                  <li><a href="studio.html">студия</a></li>
                  <li><a href="clients.html">клиенты</a></li>
@@ -27,39 +29,39 @@
       <main>
           <form action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="filter-price">
-                  <legend>стоимость:</legend>
+                  <legend class="title">стоимость:</legend>
                   <label>
                           <input type="range" min="0" max="15000" step="10">
                           от 0 до 15000
                   </label>
                   </fieldset>
                   <fieldset class="filter-view">    
-                  <legend>сетка:</legend>
-                  <label>
+                  <legend class="title">сетка:</legend>
+                  <label class="list">
                           <input type="radio" name="rad" value="Адаптивная" checked>Адаптированная
                   </label>
-                  <label>
+                  <label class="list">
                           <input type="radio" name="rad" value="Фиксированная">Фиксированная
                   </label>
-                  <label>
+                  <label class="list">
                           <input type="radio" name="rad" value="Резиновая">Резиновая
                   </label>
                   </fieldset>
                   <fieldset class="filter-feature">    
-                  <legend>особенности:</legend>
-                  <label>
+                  <legend class="title">особенности:</legend>
+                  <label class="list">
                           <input type="checkbox" checked value="Слайдер">Слайдер
                   </label>
-                  <label>
+                  <label class="list">
                           <input type="checkbox" value="Блок преимуществ">Блок преимуществ
                   </label>
-                  <label>   
+                  <label class="list">   
                           <input type="checkbox" checked value="Новости">Новости
                   </label>
-                  <label>    
+                  <label class="list">    
                           <input type="checkbox" value="Галерея">Галерея
                   </label>
-                  <label>    
+                  <label class="list">    
                           <input type="checkbox" value="Корзина">Корзина
                   </label>
                   </fieldset>    
@@ -67,7 +69,7 @@
           </form>
               <div class="tuning">
                   
-                      <span>сортировать:</span>
+                      <span class="title">сортировать:</span>
                       <ul class="tuning">
                           <li><button type="button">по цене</button></li>
                           <li><button type="button">по типу</button></li>
@@ -155,11 +157,11 @@
                  <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
                  <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
                  <div class="location">
-                     <a href="#" class="adress">напишите нам</a>
+                     <a class="texts" href="#" class="adress">напишите нам</a>
                  </div>
-                 <div class="modal visually-hidden"> <--  class=""  -->
+                 <div class="modal">
                      <form action="https://echo.htmlacademy.ru" method="post">
-                         <fieldset class="modal-letter">
+                         <div class="modal-letter">
                              <h2>Напишите нам</h2>
                              <label>
                                  Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста">
@@ -170,8 +172,8 @@
                              <label>
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
-                             <button class="letter" type="button">отправить</button>
-                         </fieldset>
+                             <button class="letter texts" type="button">отправить</button>
+                         </div>
                      </form>
                  </div>
              </address>
