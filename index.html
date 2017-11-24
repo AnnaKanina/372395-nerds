@@ -20,7 +20,7 @@
                  <li><a href="clients.html">клиенты</a></li>
                  <li><a href="catalog.html">магазин</a></li>
                  <li><a href="contacts.html">контакты</a></li>
-                 <li><a href="basket.html">корзина</a></li>
+                 <li class="last"><a href="basket.html">корзина</a></li>
              </ul> 
          </nav>
       </header>
@@ -43,16 +43,16 @@
              </div>
              <div class="wrapper" >
                  
-                     <button type="button"><p class="visually-hidden">страница слайдера 1</p></button>
-                 <button type="button"><p class="visually-hidden">страница слайдера 2</p></button>
-                 <button type="button"><p class="visually-hidden">страница слайдера 3</p></button>
+                     <button type="button"><span class="visually-hidden">страница слайдера 1</span></button>
+                 <button type="button"><span class="visually-hidden">страница слайдера 2</span></button>
+                 <button type="button"><span class="visually-hidden">страница слайдера 3</span></button>
                  
              </div>
          </div>
         
          <section class="offers">
              <h2 class="visually-hidden">Услуги</h2>
-                  <ul class="offers">
+                  <ul class="offers service">
                      <li class="web-sites">
                              <img src="img/illustration-1.jpg" width="300" height="146" alt="веб-сайты">
                              <h3>веб-сайты</h3>
@@ -73,7 +73,7 @@
                      </li>
                  </ul>
          </section>
-         <section class="about us">
+         <section class="about-us">
              <h2 class="visually-hidden">О нас</h2>
                  <div class="amenities">
                      <ul class="amenities">
@@ -141,12 +141,14 @@
          <div class="adress">
              <img src="img/map.jpg" width="1440" height="416" alt="карта">
              <address class="address">
-                 <b>nёrd's design studio</b>
-                 <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-                 <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
-                 <div class="location">
-                     <a href="#" class="adress">напишите нам</a>
-                 </div>
+                 <div class="design-studio">
+                     <b>nёrd's design studio</b>
+                     <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                     <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
+                     <div class="location">
+                         <a href="#" class="adress">напишите нам</a>
+                     </div>
+                 </div>    
                  <div class="modal">
                      <form action="https://echo.htmlacademy.ru" method="post">
                          <div class="modal-letter">
@@ -167,7 +169,7 @@
              </address>
          </div>
          <div class="link"> 
-             <ul class="link">
+             <ul class="link net">
                  <li>
                      <a href="vk.html">
                          <img src="img/vk-icon.svg" alt="vkontakte.ru">vkontakte.ru
@@ -184,8 +186,10 @@
                      </a>
                  </li>
              </ul>
-             <b>Давайте дружить, это выгодно!</b>
-             <p>Скидка 10% для друзей из социальных сетей</p>
+             <div class="bottom">
+                 <b>Давайте дружить, это выгодно!</b>
+                 <p>Скидка 10% для друзей из социальных сетей</p>
+             </div>    
          </div>
      </footer>
   </body>

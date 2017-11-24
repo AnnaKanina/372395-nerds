@@ -27,7 +27,7 @@
           </div>
       </header>
       <main>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="filter-price">
                   <legend class="title">стоимость:</legend>
                   <label>
@@ -153,12 +153,14 @@
          <div class="adress">
              <img src="img/map.jpg" width="1440" height="416" alt="карта">
              <address class="address">
-                 <b>nёrd's design studio</b>
-                 <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-                 <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
-                 <div class="location">
-                     <a class="texts" href="#" class="adress">напишите нам</a>
-                 </div>
+                 <div class="design-studio">
+                     <b>nёrd's design studio</b>
+                     <span class="position">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                     <a href="tel:+7(812)275-75-75" class="tel">тел.+7(812)275-75-75</a>
+                     <div class="location">
+                         <a class="texts" href="#" class="adress">напишите нам</a>
+                     </div>
+                 </div>    
                  <div class="modal">
                      <form action="https://echo.htmlacademy.ru" method="post">
                          <div class="modal-letter">
@@ -172,14 +174,14 @@
                              <label>
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
-                             <button class="letter texts" type="button">отправить</button>
+                             <button class="letter texts" type="submit">отправить</button>
                          </div>
                      </form>
                  </div>
              </address>
          </div>
          <div class="link"> 
-             <ul class="link">
+             <ul class="link net">
                  <li>
                      <a href="vk.html">
                          <img src="img/vk-icon.svg" alt="vkontakte.ru">vkontakte.ru
@@ -196,8 +198,10 @@
                      </a>
                  </li>
              </ul>
-             <b>Давайте дружить, это выгодно!</b>
-             <p>Скидка 10% для друзей из социальных сетей</p>
+             <div class="bottom">
+                 <b>Давайте дружить, это выгодно!</b>
+                 <p>Скидка 10% для друзей из социальных сетей</p>
+             </div> 
          </div>
      </footer>
   </body>

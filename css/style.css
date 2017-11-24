@@ -178,15 +178,13 @@ html {box-sizing: border-box;}
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: black;
-    background-color: white;}
+    color: black;}
     
 .modal-letter label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    color: black;
-    background-color: white;}
+    color: black;}
 
 /*кнопка-ссылка "отправить", красный фон*/
 .letter {
@@ -314,6 +312,222 @@ fieldset {
 .pagination-item-current a:active {
     color: rgb(113,113,113);
     background-color: rgb(213,213,213);}
+
+
+
+
+/*РАСПОЛОЖЕНИЕ БЛОКОВ*/
+/*HEADER*/
+.main-navigator img {
+    outline: 2px solid blue;}
+
+/*делаю контейнером только li со ссылкоми в навигационном меню*/
+.main-navigator ul {
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    padding: 0;}
+
+.site-navigation li {
+    margin: 25px;}
+
+.site-navigation .last {
+    margin-left: auto;}
+
+/*делаю контейнером все навигационное меню вместе с логотипом*/
+.main-navigator {
+    display: flex;
+    min-width: 1200px;
+    outline: 2px solid yellow;
+}
+
+/*MAIN*/
+/*видимый слайдер*/
+.advertising-poster-1 {
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    outline: 2px solid green;
+    width: 400px;
+}
+
+/*фон слайдера*/
+.advertising-poster {
+    background-position: left 400px top 0px;
+    }
+
+/*список с услугами - общий контейнер*/
+.service {
+    display: flex;
+    outline: 2px solid orange;   
+}
+
+/*список с услугами - отдельные контейнеры*/
+.web-sites {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid black;
+    flex-basis: 400px;
+}
+
+.applications {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid blue;
+    flex-basis: 400px;
+}
+
+.presentations {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid red;
+    flex-basis: 400px;
+}
+
+/*блок "о нас" - отдельные блоки*/
+.amenities li {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid violet;
+    
+}
+
+.sign div {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid brown;}
+
+.numbers {
+    display: flex;
+    flex-direction:;
+    outline: 2px solid orange;
+}
+
+/*"о нас" - общий контейнер*/
+.about-us {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid green;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid red;
+}
+/*адрес*/
+.design-studio {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid brown;
+}
+
+/*мы в сетях - отдельные блоки*/
+.net {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid violet;
+}
+
+.bottom {
+    display: flex;
+    flex-direction:column;
+    outline: 2px solid blue;
+}
+
+/*мы в сетях - общий блок*/
+.link {
+    display: flex;
+    flex-direction:row;
+    outline: 2px solid red;
+}
+
+
+/*КАТАЛОГ*/
+/*продолжение фона header*/
+.header {
+     display: flex;
+    flex-direction:row;
+    outline: 2px solid violet;
+    background-color: rgb(238,238,238); 
+}
+
+/*форма фильтр отдельными блоками*/
+.filter-price label {
+    display: flex;
+    flex-direction:column;
+    width: 200px;
+    outline: 2px solid blue;
+}
+
+.filter-view label {
+    display: flex;
+    flex-direction:column;
+    width: 200px;
+    outline: 2px solid blue;
+}
+
+.filter-feature label {
+    display: flex;
+    flex-direction:column;
+    width: 200px;
+    outline: 2px solid blue;
+}
+
+/*форма фильтр общий блок*/
+.filter {
+    display: flex;
+    flex-direction:column;
+    width: 200px;
+    outline: 2px solid purple;
+}
+
+/*форма tuning*/
+.tuning {
+    display: flex;
+    flex-direction:row;
+    outline: 2px solid purple;
+    width: 400px;
+}
+
+/*сайты*/
+.list ul {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid fuchsia;
+    flex-wrap: wrap;}
+
+/*пагинатор*/
+.pagination-list ul {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid green;
+}
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
