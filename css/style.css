@@ -8,7 +8,7 @@ body {
     font-weight: 400;
     color: #333333;
     background-color: white;
-    width:1440px;
+    width: 100%;
     height:auto;
 }
 
@@ -53,7 +53,7 @@ html {box-sizing: border-box;}
     
 }
 
-/*делаю контейнером только li со ссылкоми в навигационном меню*/
+/*контейнер*/
 .main-navigator ul {
     margin-left: 160px;
     margin-top: 0;
@@ -79,12 +79,15 @@ html {box-sizing: border-box;}
 
 /*делаю контейнером все навигационное меню вместе с логотипом*/
 .main-navigator {
+    background: rgb(238,238,238);
     display: flex;
     outline: 2px solid yellow;
     justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-
+/*MAIN*/
 /* SLIDER*/
 .advertising-poster {
     background-color: rgb(238,238,238);
@@ -92,12 +95,7 @@ html {box-sizing: border-box;}
     background-repeat: no-repeat;
     background-size: 760px 431px;
 }
-
-
-/*MAIN*/
-/*серый фон*/
-.main-navigator {
-    background: rgb(238,238,238);
+    
 }
 /*текст*/
 .advertising-poster b {
@@ -136,8 +134,12 @@ html {box-sizing: border-box;}
 /*удаление маркеров и внешних отступов у списков*/
 .offers {
     list-style: none;}
+
 .offers ul {
-    margin: 0;}
+    margin: 0;
+     
+
+}
 
 /*секция "о нас"*/
 /*удаление маркеров и внешних отступов у списков*/
@@ -365,8 +367,6 @@ fieldset {
 /*MAIN*/
 /*видимый слайдер*/
 .advertising-poster-1 {
-    display: flex;
-    flex-direction:column;
     outline: 2px solid green;
     width: 400px;
 }
@@ -374,79 +374,102 @@ fieldset {
 /*фон слайдера*/
 .advertising-poster {
     background-position: left 400px top 0px;
+    width: 1200px;
+    margin: 0 auto;
     }
 
-/*список с услугами - общий контейнер*/
-.service {
+/*список с услугами*/
+.offers ul {
     display: flex;
-    outline: 2px solid orange;   
-}
-
-/*список с услугами - отдельные контейнеры*/
-.offers li {
-    display: flex;
-    flex-direction:column;
     outline: 2px solid black;
-    width: 400px;
+    padding: 0;
+    justify-content: space-between;
 }
 
-/*блок "о нас" - отдельные блоки*/
-.amenities li {
-    display: flex;
-    flex-direction:column;
+/*центруем оставшуюся часть main*/
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*блок "о нас"*/
+.amenities ul {
+    padding: 0;
     outline: 2px solid violet;   
 }
 
 .sign div {
-    display: flex;
-    flex-direction:column;
-    outline: 2px solid brown;}
+    outline: 2px solid brown;
+    text-align: center;
+}
 
 .numbers {
     display: flex;
     outline: 2px solid orange;
+    justify-content: space-between;
+    padding-top: 50px;    
 }
 
 /*"о нас" - общий контейнер*/
 .about-us {
     display: flex;
     outline: 2px solid green;
+    justify-content: space-between;
 }
 
-.partners {
+.partners ul {
     display: flex;
     outline: 2px solid red;
+    padding: 0;
+    justify-content: space-around;
 }
+
 /*адрес*/
+/*родитель*/
+.address address {
+    width: 1200px;
+    margin: 0 auto;
+    outline: 5px solid violet;
+}
 .design-studio {
     display: flex;
     flex-direction:column;
     outline: 2px solid brown;
+    width: 325px;
+    height: 310px;
+    text-align: left;
+    vertical-align: center;
+    padding:20px;
+    background-color: white;
+  /*позиционирование адресного окна*/ 
+    position: absolute;
+    left: 300px;
+    bottom: 372px;
+    
 }
-
-/*мы в сетях - отдельные блоки*/
-.net {
-    display: flex;
-    outline: 2px solid violet;
-}
-
-
 
 /*мы в сетях - общий блок*/
 .link {
     display: flex;
     outline: 2px solid red;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
 /*КАТАЛОГ*/
 /*продолжение фона header*/
 .header {
-     display: flex;
-    flex-direction:row;
     outline: 2px solid violet;
-    background-color: rgb(238,238,238); 
+    background-color: rgb(238,238,238);
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto; 
 }
+
+
 
 /*форма фильтр отдельными блоками*/
 .filter-price label {
@@ -460,6 +483,7 @@ fieldset {
     display: flex;
     width: 200px;
     outline: 2px solid blue;
+    padding: 0;
 }
 
 /*форма фильтр общий блок*/
@@ -468,6 +492,11 @@ fieldset {
     flex-direction:column;
     width: 200px;
     outline: 2px solid purple;
+    padding: 0;
+}
+
+.title {
+    padding: 0;
 }
 
 /*форма tuning*/
@@ -475,7 +504,13 @@ fieldset {
     display: flex;
     flex-direction:row;
     outline: 2px solid purple;
-    width: 400px;
+    width: 660px;
+    padding: 0;
+    justify-content: space-between;  
+}
+
+.grow {
+    margin-left: auto;
 }
 
 /*сайты*/
@@ -483,13 +518,26 @@ fieldset {
     display: flex;
     flex-direction: row;
     outline: 2px solid fuchsia;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    padding: 0;
+    width: 760px;
 
+}
+ 
 /*пагинатор*/
 .pagination-list ul {
     display: flex;
     flex-direction: row;
     outline: 2px solid green;
+}
+
+/*весь main*/
+.main {
+    display: flex;
+    outline: 5px solid black;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 
