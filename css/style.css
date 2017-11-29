@@ -427,24 +427,23 @@ fieldset {
 /*адрес*/
 /*родитель*/
 .relative {
-    position: relative;
-    width: 1200px;
+   
     margin: 0 auto;
 }
 
 .address {
-    display: flex;
-    flex-direction:column;
+   
     outline: 2px solid brown;
     width: 325px;
     height: 310px;
     text-align: left;
-    vertical-align: center;
-    padding:20px;
+    vertical-align: middle;
+
     background-color: white;
   /*позиционирование адресного окна*/ 
     position:absolute;
-    bottom: 270px;
+    bottom: 10px;
+    left: 8%;
    
 }
 
