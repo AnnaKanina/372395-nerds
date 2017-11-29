@@ -94,8 +94,26 @@ html {box-sizing: border-box;}
     background-image: url("../img/slider1.png");
     background-repeat: no-repeat;
     background-size: 760px 431px;
+    width: 1200px;
+    position: relative;
+    z-index: 100;
 }
-    
+
+.key {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 95px;
+    left:50%;
+    margin: auto;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    z-index: 200;
+}
+   
 }
 /*текст*/
 .advertising-poster b {
@@ -427,8 +445,19 @@ fieldset {
 /*адрес*/
 /*родитель*/
 .relative {
-   
+    position: relative;
+    width: 1440;
     margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 0 auto;
+    height: auto;
+    min-width: 1200px;
+}
+
+.map {
+    line-height: 0;
+    width: 100%;
+    height: auto;
 }
 
 .address {
@@ -437,22 +466,24 @@ fieldset {
     width: 325px;
     height: 310px;
     text-align: left;
-    vertical-align: middle;
-
+    box-sizing: border-box;
     background-color: white;
+    padding: 20px;
   /*позиционирование адресного окна*/ 
     position:absolute;
-    bottom: 10px;
-    left: 8%;
-   
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -882.5px;
+    right: 0;   
 }
 
 /*мы в сетях - общий блок*/
 .link {
     display: flex;
     outline: 2px solid red;
-    justify-content: space-around;
-    
+    justify-content: flex-start;
+    width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -539,17 +570,20 @@ fieldset {
     margin-right: 0;
 }
 
-/*доп обертка для сортировки и каталога*/
+/*доп обертка для сортировки, каталога и пагинатора*/
 .tuning-list {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
 }
 
-/*доп обертка для филтра, сортировки и каталога*/
+/*доп обертка для филтра, сортировки,каталога и пагинатора*/
 .center {
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    
 }
  
 /*пагинатор*/
@@ -558,14 +592,7 @@ fieldset {
     outline: 2px solid green;
 }
 
-/*весь main*/
-.main {
-    display: flex;
-    outline: 5px solid black;
-    width: 1200px;
-    justify-content: space-between;
-    margin: 0 auto;
-}
+
 
 
    
