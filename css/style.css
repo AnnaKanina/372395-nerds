@@ -12,7 +12,8 @@ body {
     height:auto;
 }
 
-img { max-width: 100%;}
+img { max-width: 100%;
+}
 
 /*убираем подчеркивание у ссылок*/
 a {text-decoration: none;}
@@ -29,12 +30,20 @@ html {box-sizing: border-box;}
   margin: -1px;}
 
 /*HEADER*/
+/*логотип*/
+.main-navigator .logo {
+    padding-left: 5px;
+    color: rgb(40,49,54);
+}
+
 /*текст*/
 .main-navigator a {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    color: black;}
+    color: black;
+    margin: 0;
+}
 
 /*кнопки-ссылки с белым текстом*/
 .texts {
@@ -90,53 +99,216 @@ html {box-sizing: border-box;}
 /*MAIN*/
 /* SLIDER*/
 .advertising-poster {
-    background-color: rgb(238,238,238);
-    background-image: url("../img/slider1.png");
-    background-repeat: no-repeat;
-    background-size: 760px 431px;
     width: 1200px;
     position: relative;
-    z-index: 100;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #eeeeee;
 }
 
-.key {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 95px;
-    left:50%;
-    margin: auto;
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    z-index: 200;
+.slider {
+    display: none;
+    padding: 78px 0 80px 0;
+}
+/*Переключение слайдеров*/
+.advertising-poster-1 {
+    display:  block;}
+
+/*фон для слайдеров*/
+.advertising-poster-1 {
+   
+    background-image: url("../img/slider1.png");
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+}
+
+.advertising-poster-2 {
+   
+    background-image: url("../img/slider2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.advertising-poster-3 {
+    
+    background-image: url("../img/slider3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+
+/*переключатель слайдеров-кружочки*/
+.wrapper .key {
+    
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;  
+  padding: wrapperpx;  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wrapper .key::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;  
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  border-radius: 50%;  
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+/*активный переключатель*/
+.wrapper .active::before {
+  content: "";
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
    
-}
 /*текст*/
-.advertising-poster b {
+.slider b {
+    max-width: 600px;
+    margin: 0;
+    margin-bottom: 27px; /*не действует*/
+    
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color:black;}
 
 .advertising-poster p {
+    max-width: 430px;
+    margin: 0;
+    margin-bottom: 38px;
     color: rgb(40,49,54);}
 
-/*кнопки-ссылки "узнать больше" и "заказать", красный фон*/
-.advertising-poster a,
-.web-sites a {
-    background-color: rgb(251,86,90);}
+/*кнопка-узнать больше*/
+.texts {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
 
-/*кнопка-ссылка "заказать", зеленый фон*/
-.applications a {
-    background-color: rgb(0,202,116);}
+.texts:hover,
+.texts:focus {
+  background-color: #e74246;
+}
 
-/*кнопка-ссылка "заказать" белый текст, желтый фон*/
-.presentations a {
-    background-color: rgb(239,200,74);}
+.texts:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*веб-сайты, приложения, презентации*/
+.offers .service {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+.offers li {
+    max-width: 300px; 
+}
+.offers p {
+    margin-bottom: 40px; 
+}
+
+/*кнопки-ссылки "заказать"*/
+.text {
+  margin-bottom: 80px;  
+  display: block;
+  width: 160px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  border-radius: 3px;
+  border: none;  
+}
+.red {background-color: #fb565a;}
+.red:hover,
+.red:focus {
+  background-color: #e74246;
+}
+
+.red:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+.green {background-color: rgb(0,202,116);}
+.green:hover,
+.green:focus {
+  background-color: #00bc6c;
+}
+
+.green:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #00aa62;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+.yellow {background-color: rgb(239,200,74);}
+.yellow:hover,
+.yellow:focus {
+  background-color: #eab534;
+}
+
+.yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #e5a722;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
 
  /*заголовки*/   
 .offers h3 {
@@ -164,21 +336,41 @@ html {box-sizing: border-box;}
 .amenities {
     list-style: none;}
 .amenities ul {
-    margin: 0;}
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+.about-us {
+    box-sizing: border-box;
+    padding: 66px 20px 75px;
+}
 
 /*текст*/
 .we-studio b {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: black;}
-    
+    color: black;
+}
+.we-studio {
+    padding-bottom: 35px;
+}
+.amenities p {
+    margin: 0;
+    padding-bottom: 35px;
+}
+
 .principle p {
-    color: rgb(40,49,54);}
+    color: rgb(40,49,54);
+    padding-bottom: 45px;
+}
 
 .order {
     font-weight: 700;
-    color: black;}
+    color: black;
+    margin: 0;
+    padding-bottom: 35px;
+}
 
 /*фон nёrd's*/
 .picture {
@@ -186,17 +378,25 @@ html {box-sizing: border-box;}
     background-repeat: no-repeat;
     background-size: 360px 208px;
     width: 360px;
-    height: 208px;}
+    height: 208px;
+    padding-bottom: 10px;
+}
 
 /*С 2004 года любим точность во всем*/
-.formula b {
+.formula {
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 700;
-    color: black;}
+    color: black;
+    margin: 0;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+}
 
 /* % % % */
 .numbers span {
     font-size: 45px;
-    line-height: 10,06px;
+    line-height: 10px;
     font-weight: 700;
     color: black;}
 
@@ -204,14 +404,19 @@ html {box-sizing: border-box;}
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: rgb(40,49,54);}
+    color: rgb(40,49,54);
+    padding-top: 25px;
+    margin: 0;
+}
 
 /*секция Партнеры*/
 /*удаление маркеров и внешних отступов у списков*/
 .partners {
-    list-style: none;}
+    list-style: none;
+    padding: 0;}
 .partners ul {
-    margin: 0;}
+    margin: 45px 0;
+}
 
 /*FOOTER*/
 /*текст*/
@@ -231,9 +436,44 @@ html {box-sizing: border-box;}
     font-weight: 400;
     color: rgb(102,102,102);}
 
+
+
+
+
 /*кнопка-ссылка "напишите нам", красный фон*/
 .location a {
     background-color: rgb(251,86,90);}
+
+.location a {
+  display: block;
+  width: 220px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  border-radius: 3px;
+  border: none;  
+}
+.location a {background-color: #fb565a;}
+.location a:hover,
+.location a:focus {
+  background-color: #e74246;
+}
+
+.location a:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
 
 /*Модальное окно форма*/
 .modal {display: none;}
@@ -386,7 +626,7 @@ fieldset {
 /*видимый слайдер*/
 .advertising-poster-1 {
     outline: 2px solid green;
-    width: 400px;
+   
 }
 
 /*фон слайдера*/
@@ -458,25 +698,32 @@ fieldset {
     line-height: 0;
     width: 100%;
     height: auto;
+    margin-top: 85px
 }
 
 .address {
-   
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     outline: 2px solid brown;
     width: 325px;
     height: 310px;
     text-align: left;
     box-sizing: border-box;
     background-color: white;
-    padding: 20px;
+    padding: 50px;
+    
   /*позиционирование адресного окна*/ 
     position:absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    left: -882.5px;
+    left: -835px;
     right: 0;   
 }
+/*адресное окно внутри*/
+.name {
+    text-transform: uppercase;}
 
 /*мы в сетях - общий блок*/
 .link {
@@ -485,7 +732,17 @@ fieldset {
     justify-content: flex-start;
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
+}
+
+.net {
+    width:400px;
+    padding: 70px 0;
+}
+.bottom {
+    width:780px;
+    padding: 75px 0;
+    margin: 0;
 }
 
 
@@ -520,8 +777,6 @@ fieldset {
 
 /*форма фильтр общий блок*/
 .filter {
-    display: flex;
-    flex-direction:column;
     width: 260px;
     min-height: 780px;
     outline: 2px solid purple;
