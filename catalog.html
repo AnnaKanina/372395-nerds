@@ -29,13 +29,25 @@
       <main>
         
           <div class="center"> <!--обертка 3х эл-тов-->
-          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          
+              <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="filter-price">
                   <legend class="title">стоимость:</legend>
-                  <label>
-                          <input type="range" min="0" max="15000" step="10">
-                          от 0 до 15000
-                  </label>
+                  <div class="range-filter">
+                      <div class="range-controls">
+                          <div class="scale">
+                              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                          <div class="toggle toggle-max"></div>
+                      </div>
+                      <div class="price-controls">
+                           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                           <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+
+                      </div>
+                  </div>    
+                
                   </fieldset>
                   <fieldset class="filter-view choice">    
                   <legend class="title">сетка:</legend>
@@ -67,12 +79,12 @@
                           <input type="checkbox" value="Корзина">Корзина
                   </label>
                   </fieldset>    
-                  <button type="submit">показать</button>    
-          </form>
+                  <button class="show" type="submit">показать</button>    
+            </form>
               <div class="tuning-list"> <!--обертка сортировки и каталога-->
               <div class="tuning">
                   
-                      <span class="title">сортировать:</span>
+                      <span class="title choice">сортировать:</span>
                       <ul class="tuning">
                           <li class="grow"><button type="button">по цене</button></li>
                           <li><button type="button">по типу</button></li>
@@ -199,18 +211,22 @@
                      <form action="https://echo.htmlacademy.ru" method="post">
                          <div class="modal-letter">
                              <h2>Напишите нам</h2>
+                            <div class="name-email">
                              <label>
                                  Ваше имя:<input type="text" placeholder="Представьтесь, пожалуйста">
                              </label>
                              <label>
                                  Ваш e-mail:<input type="email" placeholder="Для отправки ответа">
                              </label>
+                            </div>
                              <label>
                                  Текст письма:<textarea name="text" placeholder="В свободной форме"></textarea>
                              </label>
-                             <button class="letter" type="button">отправить</button>
+                             <button class="send" type="button">отправить</button>
+                             
                          </div>
                      </form>
+                             <button class="close" type="button">закрыть</button>
                  </div>
   </body>
 </html>

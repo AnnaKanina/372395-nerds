@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #333333;
+    color: #000000; 
     background-color: white;
     width: 100%;
     height:auto;
@@ -57,9 +57,7 @@ html {box-sizing: border-box;}
     list-style: none;}
 
 .main-navigator img {
-    outline: 2px solid blue;
-    margin-top: 53px;
-    
+    margin-top: 53px; 
 }
 
 /*контейнер*/
@@ -68,7 +66,6 @@ html {box-sizing: border-box;}
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
-    outline: 2px solid red;
     display: flex;
     flex-wrap:wrap;
     padding: 0;
@@ -78,7 +75,7 @@ html {box-sizing: border-box;}
 .site-navigation li {
     margin-right: 45px;
     margin-top: 80px;
-    
+    text-transform: uppercase;
 }
 
 /*корзина*/
@@ -88,9 +85,8 @@ html {box-sizing: border-box;}
 
 /*делаю контейнером все навигационное меню вместе с логотипом*/
 .main-navigator {
-    background: rgb(238,238,238);
+    background-color: rgb(238,238,238);
     display: flex;
-    outline: 2px solid yellow;
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
@@ -142,6 +138,7 @@ html {box-sizing: border-box;}
     
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;  
@@ -169,7 +166,6 @@ html {box-sizing: border-box;}
   z-index: 100;
   
   width: 160px;
-  height: 18px;
 
   text-align: center;
   font-size: 0;
@@ -195,9 +191,8 @@ html {box-sizing: border-box;}
    
 /*текст*/
 .slider b {
-    max-width: 600px;
+    max-width: 376px;
     margin: 0;
-    margin-bottom: 27px; /*не действует*/
     
     font-size: 55px;
     line-height: 55px;
@@ -205,8 +200,9 @@ html {box-sizing: border-box;}
     color:black;}
 
 .advertising-poster p {
-    max-width: 430px;
+    max-width: 361px;
     margin: 0;
+    margin-top: 27px;
     margin-bottom: 38px;
     color: rgb(40,49,54);}
 
@@ -250,11 +246,14 @@ html {box-sizing: border-box;}
     box-sizing: border-box;
 }
 .offers li {
-    max-width: 300px; 
+    max-width: 300px;    
 }
 .offers p {
     margin-bottom: 40px; 
 }
+.offers h3 {
+    text-transform: uppercase;    
+;}
 
 /*кнопки-ссылки "заказать"*/
 .text {
@@ -475,23 +474,148 @@ html {box-sizing: border-box;}
 
 
 
-/*Модальное окно форма*/
-.modal {display: none;}
+/*Модальное окно*/
 .modal-letter h2 {
+    margin: 0;
+    margin-bottom: 40px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    color: black;}
+    color: black;
+    
+}
     
 .modal-letter label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    color: black;}
+    color: black;
+}
+
+.name-email {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.name-email label{
+    margin-right: 40px;
+}
+
+.modal-letter input[type="text"],
+.modal-letter input[type="email"] {
+    box-sizing: border-box;
+    width: 360px;
+    height: 50px;
+    padding: 15px 15px;
+    padding-right: 15px;
+    font: inherit;
+    color: #000000;
+}
+
+.modal-letter textarea {
+    box-sizing: border-box;
+    width: 760px;
+    height: 120px;
+    padding: 15px 15px;
+    padding-right: 15px;
+    font: inherit;
+    color: #000000;
+}
+  
+.close {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;/*прозрачность*/
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  right: 80px;
+}
+
+.close::before,  /*псевдоэлем*/
+.close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+/*Модальное окно. Всплывающая форма.*/
+/*.modal {display: none;}*/
+.modal {
+    width: 960px;
+    height:590px;
+    color: black;
+    position:absolute;
+    bottom: -1000px;
+    left: 50%;
+    margin-left: -480px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-letter {
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 85px;
+}
 
 /*кнопка-ссылка "отправить", красный фон*/
-.letter {
-    background-color: rgb(251,86,90);}
+.send {
+    width: 260px;
+    height: 50px;
+    background-color: rgb(251,86,90);
+    cursor: pointer;
+    position: absolute;
+    bottom: 85px;
+    left: 100px;
+}
+
+.send {
+  display: block;
+  width: 260px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  border-radius: 3px;
+  border: none;  
+}
+.send {background-color: #fb565a;}
+.send:hover,
+.send:focus {
+  background-color: #e74246;
+}
+
+.send:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
 
 /*Див link (мы в сетях)*/
 /*удаление маркеров и внешних отступов у списков*/
@@ -515,10 +639,10 @@ html {box-sizing: border-box;}
 
 
 
-/*СТИЛИ КАТАЛОГА*/
-fieldset {
-    border: none;}
 
+
+
+/*СТИЛИ КАТАЛОГА*/
 /*HEADER*/
 .under {
     font-size: 32px;
@@ -527,38 +651,173 @@ fieldset {
     color: black;}
 
  /*MAIN*/
-/*текст бегунка*/
-.title {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    color: black;}
+/*сетка: особенности: сортировать:*/
+.choice {   
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 49px;
+    
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;}
 
-.filter-price label {
+.choice label {
+    margin-top: 20px;
     font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    color: black;}
- 
-.list {
-    font-size: 10px;
-    line-height: 16px;
-    font-weight: 400;
-    color: black;}
+    line-height: 20px;
+    text-transform: none;
+}
 
 
-/*кнопка-ссылка "показать" черный текст, серый фон*/
-.filter-view button {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color:white;
-    background-color: rgb(102,102,102);}
+/*Кнопка ПОКАЗАТЬ*/
+.show {
+  display: block;
+  width: 260px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  border-radius: 3px;
+  border: none;  
+}
+.show {background-color: #eeeeee;}
+.show:hover,
+.show:focus {
+  background-color: #dfdfdf;
+}
+
+.show:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}    
+
+
+
+
+
+
+/*Форма цены. Шкала.*/
+.filter-price {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 58px;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.filter-price legend {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-controls {
+    position: relative;
+    
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0; 
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+
+
+
 
 /*сортировать:*/
 /*удаление маркеров и внешних отступов у списка*/
 .tuning {
-    list-style: none;}
+    list-style: none;
+}
+
+/*СОРТИРОВАТЬ:*/
+.tuning {
+    display: flex;
+    flex-direction:row;
+    outline: 2px solid purple;
+    width: 680px;
+    padding: 0;
+    justify-content: space-between;
+}
+
 .tuning ul {
     margin: 0;}
 
@@ -568,10 +827,11 @@ fieldset {
     font-weight: 400;
     color: black;}
 
+
 /*КАРТОЧКА ТОВАРА*/
 /*удаление маркеров и внешних отступов у карточек*/
 .list ul {list-style: none;}
-.list li {margin: 0;}
+
 
 .a-img strong {
     font-size: 18px;
@@ -624,10 +884,6 @@ fieldset {
 
 /*MAIN*/
 /*видимый слайдер*/
-.advertising-poster-1 {
-    outline: 2px solid green;
-   
-}
 
 /*фон слайдера*/
 .advertising-poster {
@@ -639,7 +895,6 @@ fieldset {
 /*список с услугами*/
 .offers ul {
     display: flex;
-    outline: 2px solid black;
     padding: 0;
     justify-content: space-between;
 }
@@ -652,18 +907,15 @@ fieldset {
 
 /*блок "о нас"*/
 .amenities ul {
-    padding: 0;
-    outline: 2px solid violet;   
+    padding: 0; 
 }
 
 .sign div {
-    outline: 2px solid brown;
     text-align: center;
 }
 
 .numbers {
     display: flex;
-    outline: 2px solid orange;
     justify-content: space-between;
     padding-top: 50px;    
 }
@@ -671,13 +923,11 @@ fieldset {
 /*"о нас" - общий контейнер*/
 .about-us {
     display: flex;
-    outline: 2px solid green;
     justify-content: space-between;
 }
 
 .partners ul {
     display: flex;
-    outline: 2px solid red;
     padding: 0;
     justify-content: space-around;
 }
@@ -705,7 +955,6 @@ fieldset {
    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 2px solid brown;
     width: 325px;
     height: 310px;
     text-align: left;
@@ -728,7 +977,6 @@ fieldset {
 /*мы в сетях - общий блок*/
 .link {
     display: flex;
-    outline: 2px solid red;
     justify-content: flex-start;
     width: 1200px;
     margin: 0 auto;
@@ -760,31 +1008,10 @@ fieldset {
 
 
 /*форма фильтр отдельными блоками*/
-.filter-price label {
-    display: flex;
-    flex-direction:column;
-    width: 260px;
-    outline: 2px solid blue;
-
-}
-
 .choice {
     display: flex;
     width: 260px;
     outline: 2px solid blue;
-    padding: 0;
-}
-
-/*форма фильтр общий блок*/
-.filter {
-    width: 260px;
-    min-height: 780px;
-    outline: 2px solid purple;
-    padding: 0;
-    margin-right: 140px;
-}
-
-.title {
     padding: 0;
 }
 
@@ -796,7 +1023,6 @@ fieldset {
     width: 680px;
     padding: 0;
     justify-content: space-between;
-    margin-bottom: 55px
 }
 
 .grow {
