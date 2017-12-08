@@ -31,8 +31,7 @@ html {box-sizing: border-box;}
 
 /*HEADER*/
 header {
-  background-color: rgb(238,238,238);
-  background-size: 100%;  
+  background-color: rgb(238,238,238); 
 }
 
 /*логотип*/
@@ -88,6 +87,7 @@ header {
     margin-left: auto;
     flex-grow: 0;}
 
+
 /*делаю контейнером все навигационное меню вместе с логотипом*/
 .main-navigator {
     background-color: rgb(238,238,238);
@@ -101,7 +101,7 @@ header {
 /*MAIN*/
 /* SLIDER*/
 .advertising-poster {
-    width: 1200;
+    width: 1440px;
     position: relative;
     margin: 0 auto;
     padding: 0 20px;
@@ -110,6 +110,7 @@ header {
 }
 
 .slider {
+    
     display: none;
     padding: 78px 0 80px 0;
 }
@@ -424,16 +425,19 @@ header {
 }
 
 /*FOOTER*/
-.relative .marker {
-    background-image: url("../img/map-marker.png");
+.map::after {
+    content: '';
+    background-image: url("../img/Layer 1.svg");
     width: 231px;
-    height: 190px; 
-    background-repeat: no-repeat;
-    background-size: 231px 190px;
+    height: 190px;
     position: absolute;
-    left: 780px;
-    top: 80px;
-    margin: 0 auto;} 
+    left: 57%;
+    bottom: 35%;
+    margin: auto;
+    cursor: pointer;
+}
+     
+
 
 /*текст*/
 .address {
@@ -647,63 +651,88 @@ header {
 
 /*Иконки*/
 .vkontakte {
-    background-image: url("../img/Group 8.png");
-    background-repeat: no-repeat;
-    background-size: 78px 78px;
-    width: 78px;
+    box-sizing: border-box;
+	border-radius: 50%;
+	margin-left: 20px;
+	width: 78px;
     height: 78px;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 0;
+	background-color: #e1e1e1;
+}
+.vkontakte img {
+    box-sizing: border-box;
+    width: 26px;
+    height: 15px;
+    margin-left: 27px;
+    margin-top: 30px;
 }
 
 .vkontakte:hover,
 .vkontakte:focus {
-  background-image: url("../img/Group 9.png");
+    background-color: #e74246;
+    cursor: pointer;
 }
 
 .vkontakte:active {
-  background-image: url("../img/Group 10.png");
+    background-color: #d7373b; 
+}
+.vkontakte img:active {
+    color: #e74246;
 }
 
+
 .facebook {
-    background-image: url("../img/Group 11.png");
-    background-repeat: no-repeat;
-    background-size: 78px 78px;
-    width: 78px;
-    height: 78px;
-    margin: 0 auto;
+    box-sizing: border-box;
+	border-radius: 50%;
     margin-left: 10px;
-    margin-right: 0;
+	padding: 0;
+	width: 78px;
+    height: 78px;
+	background-color: #e1e1e1;
+}
+.facebook img {
+    margin-left: 33px;
+    margin-top: 27px;
 }
 
 .facebook:hover,
 .facebook:focus {
-  background-image: url("../img/Group 12.png");
+    background-color: #e74246;
+    cursor: pointer;
 }
 
 .facebook:active {
-  background-image: url("../img/Group 13.png");
+    background-color: #d7373b; 
+}
+.facebook img:active {
+    background-color: #e74246;
 }
 
+
 .instagram {
-    background-image: url("../img/Group 14.png");
-    background-repeat: no-repeat;
-    background-size: 78px 78px;
-    width: 78px;
-    height: 78px;
-    margin: 0 auto;
+    box-sizing: border-box;
+	border-radius: 50%;
     margin-left: 10px;
-    margin-right: 0;
+	padding: 0;
+	width: 78px;
+    height: 78px;
+	background-color: #e1e1e1;
+}
+.instagram img {
+    margin-left: 30px;
+    margin-top: 27px;
 }
 
 .instagram:hover,
 .instagram:focus {
-  background-image: url("../img/Group 15.png");
+    background-color: #e74246;
+    cursor: pointer;
 }
 
 .instagram:active {
-  background-image: url("../img/Group 16.png");
+    background-color: #d7373b; 
+}
+.instagram img:active {
+    background-color: #e74246;
 }
 
 
@@ -912,69 +941,59 @@ header {
     width: 100%;
 }
 
-.tuning li {
-    font-size: 14px;
+.tuning button {
+    background: none ;
+    border: none;}
+    
+ .tuning button {font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #ededed;
     text-transform: uppercase;
-    margin-right: 20px;
+    margin-right: 15px;
 }
-.tuning li:hover,
-.tuning li:focus {
+.tuning button:hover,
+.tuning button:focus {
     color: #a6a6a6;
     cursor: pointer;
 }
 
-.tuning li:active {
+.tuning button:active {
     color: #231f20;
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-.tuning .grow {color: #231f20;}
+.grow button {color: #231f20;}
 
+
+/*Треугольники*/
 .triangle-doun {
-    /*background-image: url("../img/icon-down-dir1.png");*/
-    background-image: url("../img/icon-down-dir3.png");
-    background-repeat: no-repeat;
-    background-size: 11px 10px;
-    width: 11px;
-    height: 10px;
-    margin-top: 3px;
-    margin-left: 20px;
-    margin-right: 10px;
-    
-}
-.triangle-doun:hover,
-.triangle-doun:focus {
-    background-image: url("../img/icon-down-dir2.png");
+    border-radius: 10px;
+    position: relative;
+   }
+.triangle-doun::after {
+    content: ''; 
+    position: absolute;
+    left: 10px;
+    right: 15px;
+    bottom: 50px; 
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid #231f20; /* Добавляем треугольник */
     cursor: pointer;
 }
-
-.triangle-doun:active {
-    background-image: url("../img/icon-down-dir3.png");
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-}
-
+   
 .triangle-up {
-    background-image: url("../img/icon-up-dir1.png");
-    background-repeat: no-repeat;
-    background-size: 11px 10px;
-    width: 11px;
-    height: 10px;
-    margin-top: 3px;
-    margin-right: 0;
-    
-    
-}
-.triangle-up:hover,
-.triangle-up:focus {
-    background-image: url("../img/icon-up-dir2.png");
+    border-radius: 10px;
+    position: relative;
+   }
+.triangle-up::after {
+    content: ''; 
+    position: absolute;
+    right: 0px;
+    bottom: 60px; 
+    border: 10px solid transparent;
+    border-bottom: 10px solid #ededed; 
+    margin-right: 5px;
     cursor: pointer;
-}
-
-.triangle-up:active {
-    background-image: url("../img/icon-up-dir3.png");
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 
