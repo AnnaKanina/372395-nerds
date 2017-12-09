@@ -85,7 +85,13 @@ header {
 /*корзина*/
 .site-navigation .last {
     margin-left: auto;
-    flex-grow: 0;}
+    padding-left: 35px;
+    flex-grow: 0;
+    
+    background-image: url("../img/cart-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+}
 
 
 /*делаю контейнером все навигационное меню вместе с логотипом*/
@@ -101,7 +107,7 @@ header {
 /*MAIN*/
 /* SLIDER*/
 .advertising-poster {
-    width: 1440px;
+    width: ;
     position: relative;
     margin: 0 auto;
     padding: 0 20px;
@@ -110,9 +116,9 @@ header {
 }
 
 .slider {
-    
+    box-sizing: border-box;
     display: none;
-    padding: 78px 0 80px 0;
+    padding: 80px 20px 80px 20px;
 }
 /*Переключение слайдеров*/
 .advertising-poster-1 {
@@ -124,6 +130,8 @@ header {
     background-image: url("../img/slider1.png");
     background-repeat: no-repeat;
     background-position: 93% 18px;
+     width: 1200px;
+    margin: 0 auto;
 }
 
 .advertising-poster-2 {
@@ -131,6 +139,8 @@ header {
     background-image: url("../img/slider2.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
+     width: 1200px;
+    margin: 0 auto;
 }
 
 .advertising-poster-3 {
@@ -138,6 +148,8 @@ header {
     background-image: url("../img/slider3.png");
     background-repeat: no-repeat;
     background-position: 100% 20px;
+     width: 1200px;
+    margin: 0 auto;
 }
 
 /*переключатель слайдеров-кружочки*/
@@ -329,12 +341,20 @@ header {
 
 /*удаление маркеров и внешних отступов у списков*/
 .offers {
-    list-style: none;}
+    list-style: none;
+}
 
 .offers ul {
-    margin: 0;
-     
+    display: flex;
+    justify-content: space-between;   
+}
 
+
+
+/*центруем оставшуюся часть main*/
+.midle {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /*секция "о нас"*/
@@ -346,9 +366,22 @@ header {
     margin-bottom: 0px;
 }
 
+.dash p {
+    padding-left: 30px;
+}
+
+.dash {
+    background-image: url("../img/Layer 23 copy 3.png");
+    background-repeat: no-repeat;
+    background-size: 25px 2px;
+    background-position: 0 10px;
+}
+
 .about-us {
     box-sizing: border-box;
-    padding: 66px 20px 75px;
+    padding: 80px 0 75px 0;
+    border-top: 2px solid #cccccc;
+    margin: 0 20px;
 }
 
 /*текст*/
@@ -419,15 +452,36 @@ header {
 /*удаление маркеров и внешних отступов у списков*/
 .partners {
     list-style: none;
-    padding: 0;}
-.partners ul {
-    margin: 45px 0;
+    padding: 0;
+    margin: 0;
+    
 }
+.partners ul {
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    width: 1160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    margin:0 20px;
+    margin-top: -40px;
+    margin-bottom: 80px;
+}
+
+.partners li:not(.mishka) {
+    box-sizing: border-box;
+    border-right: 2px solid #cccccc;
+    padding: 0 60px 0 0;
+    max-height: 52px;
+}
+
+
 
 /*FOOTER*/
 .map::after {
     content: '';
-    background-image: url("../img/Layer 1.svg");
+    background-image: url("../img/map-marker.svg");
     width: 231px;
     height: 190px;
     position: absolute;
@@ -927,7 +981,6 @@ header {
 .tuning {
     display: flex;
     flex-direction:row;
-    outline: 2px solid purple;
     width: 760px;
     padding: 0;
     justify-content: space-between;
@@ -1021,6 +1074,10 @@ header {
     font-weight: 400;
     color: rgb(102,102,102);}
 
+.a-img li {
+    
+}
+
 /*кнопка-ссылка "9900 руб" белый текст, красный фон*/
 .a-img button {
     background-color: rgb(251,86,90);}
@@ -1061,25 +1118,8 @@ header {
 /*MAIN*/
 /*видимый слайдер*/
 
-/*фон слайдера*/
-.advertising-poster {
-    background-position: left 400px top 0px;
-    width: 1200px;
-    margin: 0 auto;
-    }
 
-/*список с услугами*/
-.offers ul {
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-}
 
-/*центруем оставшуюся часть main*/
-.midle {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 /*блок "о нас"*/
 .amenities ul {
@@ -1102,11 +1142,7 @@ header {
     justify-content: space-between;
 }
 
-.partners ul {
-    display: flex;
-    padding: 0;
-    justify-content: space-around;
-}
+
 
 /*адрес*/
 /*родитель*/
@@ -1173,7 +1209,6 @@ header {
 /*КАТАЛОГ*/
 /*продолжение фона header*/
 .header {
-    outline: 2px solid violet;
     background-color: rgb(238,238,238);
     text-align: center;
     width: 1200px;
@@ -1187,7 +1222,6 @@ header {
 .choice {
     display: flex;
     width: 260px;
-    outline: 2px solid blue;
     padding: 0;
 }
 
@@ -1197,7 +1231,6 @@ header {
 .list ul {
     display: flex;
     flex-direction: row;
-    outline: 2px solid fuchsia;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -1234,7 +1267,6 @@ header {
 /*пагинатор*/
 .pagination-list ul {
     display: flex;
-    outline: 2px solid green;
 }
 
 
